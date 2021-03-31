@@ -1,0 +1,36 @@
+.adminMainDiv {
+    box-sizing: border-box;
+}
+.adminLeft {
+    background-color: #203D37;
+    float: left;
+    width: 25%;
+    height: 500px;
+}
+.adminUL{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #203D37;
+}
+.adminUL h1{
+    color: white;
+    padding-left: 50px;
+}
+.adminA{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 50px;
+    padding-top: 25px;
+}
+.adminA:hover{
+    background-color: #F4FCFB;
+}
+.adminRight {
+    float: left;
+    width: 75%;
+    height: 500px;
+    background-color:#F4FCFB;
+}

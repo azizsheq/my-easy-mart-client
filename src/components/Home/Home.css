@@ -1,0 +1,24 @@
+.searchDiv {
+    text-align: center;
+    padding-top: 50px;
+}
+.homeSearch {
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 12px 40px;
+}
+.searchButton {
+    background-color: #4CAF50;
+    color: white;
+    width: 10%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 12px;
+    font-weight: 500;
+}

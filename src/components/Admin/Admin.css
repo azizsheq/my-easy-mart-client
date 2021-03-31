@@ -1,18 +1,32 @@
 .adminMainDiv {
     box-sizing: border-box;
+    background-color: #203D37;
 }
 .adminLeft {
     background-color: #203D37;
     float: left;
-    width: 25%;
+    width: 30%;
     height: 500px;
+}
+.adminLeft h1 {
+    background-color: #203D37;
+    color: white;
+    float: left;
+    padding-left: 80px;
+    font-family: 'Courier New', Courier, monospace;
 }
 .adminUL{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 100%;
     background-color: #203D37;
+}
+.adminUL li{
+
+}
+.adminUL li:hover{
+    width: 100%;
 }
 .adminUL h1{
     color: white;
@@ -25,12 +39,9 @@
     padding-left: 50px;
     padding-top: 25px;
 }
-.adminA:hover{
-    background-color: #F4FCFB;
-}
 .adminRight {
     float: left;
-    width: 75%;
+    width: 70%;
     height: 500px;
     background-color:#F4FCFB;
 }

@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import './Navigation.css';
 import logo from '../../images/android-chrome-192x192.png'
 import { UserContext } from "../../App";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser } from "@fortawesome/free-regular-svg-icons";
 
 const Navigation = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
@@ -26,7 +28,7 @@ const Navigation = () => {
 
                 <li className="navUser">
                     {
-                        !loggedInUser.email ? "user" : loggedInUser.email
+                        !loggedInUser.email ? <FontAwesomeIcon icon={faUser} /> : loggedInUser.email
                     }
                 </li>
             </ul>

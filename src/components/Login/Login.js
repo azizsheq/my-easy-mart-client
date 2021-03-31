@@ -4,6 +4,9 @@ import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from './firebase.config';
 import { UserContext } from '../../App';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { useHistory, useLocation } from 'react-router';
 
 
 // conditional initalizing of firebase
@@ -24,6 +27,11 @@ const Login = () => {
 
     // setting useContext value
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+
+    // history and location and from for private routing
+    const history = useHistory();
+    const location = useLocation();
+    let { from } = location.state || { from: { pathname: "/" }};
 
     // to create an instance of the Google provider object
     var provider = new firebase.auth.GoogleAuthProvider();
@@ -46,6 +54,7 @@ const Login = () => {
                 }
                 setUser(signedInUser);
                 setLoggedInUser(signedInUser);
+                history.replace(from);  // sending to original location
             }).catch((error) => {
                 // Handle Errors here.
                 var errorCode = error.code;
@@ -81,11 +90,17 @@ const Login = () => {
             {
                 loggedInUser.email ? 
                 <button onClick={handleSignOut} className="signOutButton">Sign out</button> : 
-                <button onClick={handleGoogleSignIn} className="googleButton">Sign in with Google</button>
+                <button onClick={handleGoogleSignIn} 
+                className="googleButton">
+                    <FontAwesomeIcon icon={faGoogle} />&nbsp;Sign in with Google
+                </button>
             }
             <p className="error" style={{ color: 'red' }}>{user.error}</p>
             {
-                user.success && <p className="error" style={{ color: 'white' }}>User {loggedInUser.email ? 'logged in' : 'logged out'} successfully</p>
+                user.success && 
+                <p className="error" style={{ color: 'white' }}>
+                    User {loggedInUser.email ? 'logged in' : 'logged out'} successfully
+                </p>
             }
         </div>
     );

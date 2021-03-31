@@ -11,6 +11,7 @@ import Login from "./components/Login/Login";
 import Navigation from "./components/Navigation/Navigation";
 import NoMatch from "./components/NoMatch/NoMatch";
 import Orders from "./components/Orders/Orders";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
 export const UserContext = createContext();
 
@@ -23,9 +24,9 @@ function App() {
       <Router>
         <Navigation />
         <Switch>
-          <Route path="/admin">
+          <PrivateRoute path="/admin">
             <Admin />
-          </Route>
+          </PrivateRoute>
           <Route path="/deals">
             <Deals />
           </Route>

@@ -10,12 +10,18 @@
 .googleButton{
     background-color: #4CAF50;
     width: 70%;
-    height: 50px;
+    height: 60px;
+    border: 1px  solid white;
     border-radius: 10px;
+    color: white;
+    font-size: 18px;
 }
 .signOutButton{
     background-color: #4CAF50;
     width: 70%;
-    height: 50px;
+    height: 60px;
+    border: 1px  solid white;
     border-radius: 10px;
+    color: white;
+    font-size: 18px;
 }

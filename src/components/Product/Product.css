@@ -1,0 +1,42 @@
+.productDiv{
+    text-align: center;
+    border: 5px;
+    border-radius: 10px;
+    margin: 20px;
+    padding-bottom: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 2px gray, 0 0 25px lightgray, 0 0 5px gray ;
+}
+.productImage{
+    width: 60%;
+    height: 60%;
+}
+.productName {
+    background-color: #4CAF50;
+    color: white;
+    font-size: large;
+    height: 10%;
+    padding-top: 2px;
+}
+.productDivBottom {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-weight: bold;
+}
+.productPrice {
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+    font-weight: bold;
+}
+.btnBuyNow {
+    background-color: #4CAF50;
+    border: 5px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 5px;
+}
+.btnBuyNow:hover {
+    background-color: teal;
+    color:yellow
+}

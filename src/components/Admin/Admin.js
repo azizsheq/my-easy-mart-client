@@ -11,7 +11,7 @@ import EditProduct from "../EditProduct/EditProduct";
 import ManageProduct from "../ManageProduct/ManageProduct";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEdit } from "@fortawesome/free-regular-svg-icons";
-import { faDollarSign, faFileUpload, faPlus, faThLarge, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faPlus, faThLarge } from "@fortawesome/free-solid-svg-icons";
 
 const Admin = () => {
     return (
@@ -37,17 +37,8 @@ const Admin = () => {
                             <EditProduct />
                         </Route>
                     </Switch>
-                    <FontAwesomeIcon icon={faEdit} />
-                    <FontAwesomeIcon icon={faTrash} />
-                    <FontAwesomeIcon icon={faFileUpload} />
-                    <FontAwesomeIcon icon={faDollarSign} />
                 </div>
-
-
             </Router>
-
-
-
         </div>
     );
 };

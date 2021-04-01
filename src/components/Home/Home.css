@@ -22,3 +22,10 @@
     padding: 12px;
     font-weight: 500;
 }
+.homeMainDiv{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+}

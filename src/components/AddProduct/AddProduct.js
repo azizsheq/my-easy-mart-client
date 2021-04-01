@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Button, Col, Form, Row } from 'react-bootstrap';
-import './AddProduct.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFileUpload } from "@fortawesome/free-solid-svg-icons";
+import './AddProduct.css';
 
 const AddProduct = () => {
 
@@ -152,7 +154,7 @@ const AddProduct = () => {
 
                     <Form.Group as={Row} controlId="formHorizontalFile">
                         <Form.Label column sm={4}>
-                            Add Photo
+                            Add Photo <FontAwesomeIcon icon={faFileUpload} />
                         </Form.Label>
                         <Col sm={8}>
                             <Form.Control type="file" onChange={handleImageUpload}/>

@@ -16,7 +16,6 @@ const ManageProduct = () => {
     }, [])
 
     const deleteProduct = (id) => {
-
         const url = `http://localhost:5055/deleteProduct/${id}`;
         console.log(url);
 

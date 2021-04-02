@@ -38,8 +38,8 @@ const ManageProduct = () => {
                     <tr>
                         <th>Name</th>
                         <th>Price</th>
-                        <th>Update</th>
-                        <th>Delete</th>
+                        <th className="toCenter">Update</th>
+                        <th className="toCenter">Delete</th>
                     </tr>
                 </thead>
                 {
@@ -48,8 +48,8 @@ const ManageProduct = () => {
                             <tr>
                                 <td>{product.name}</td>
                                 <td>{product.price}</td>
-                                <td><FontAwesomeIcon icon={faEdit} style={{color: 'green'}}/></td>
-                                <td><FontAwesomeIcon icon={faTrash} style={{color: 'red'}}
+                                <td className="toCenter"><FontAwesomeIcon icon={faEdit} style={{color: 'green'}}/></td>
+                                <td className="toCenter"><FontAwesomeIcon icon={faTrash} style={{color: 'red'}}
                             onClick={() => deleteProduct(product._id)} /></td>
                             </tr>
                         </tbody>

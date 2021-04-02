@@ -9,7 +9,7 @@ import {
 import AddProduct from "../AddProduct/AddProduct";
 import EditProduct from "../EditProduct/EditProduct";
 import ManageProduct from "../ManageProduct/ManageProduct";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit } from "@fortawesome/free-regular-svg-icons";
 import { faPlus, faThLarge } from "@fortawesome/free-solid-svg-icons";
 

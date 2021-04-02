@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Button, Col, Form, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileUpload } from "@fortawesome/free-solid-svg-icons";
+import { Button, Col, Form, Row } from 'react-bootstrap';
 import './AddProduct.css';
 
 const AddProduct = () => {

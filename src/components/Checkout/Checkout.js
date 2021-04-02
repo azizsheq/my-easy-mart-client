@@ -43,14 +43,14 @@ const Checkout = () => {
             .catch((error) => {
                 console.error('Error:', error);
             });
-    }, [])
+    }, [id])
 
 
 
     const handleCheckout = () => {
         // console.log('Checkout Clicked');
         // setting new order object
-        console.log(checkoutProduct);
+        // console.log(checkoutProduct);
         // fetch for sending checkout product data to server 
         const orderURL = `http://localhost:5055/addToOrders`;
         fetch(orderURL, {
@@ -61,7 +61,7 @@ const Checkout = () => {
             body: JSON.stringify(checkoutProduct),
         })
             .then(response => {
-                console.log("Server side response: ", response);
+                // console.log("Server side response: ", response);
             })
             .catch(error => {
                 console.error('Server side Error:', error);
@@ -69,6 +69,7 @@ const Checkout = () => {
         alert('Order Successful !')
     }
 
+    
     return (
         <div className="container">
             <h1>Checkout here </h1>

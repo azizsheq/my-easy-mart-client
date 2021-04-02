@@ -1,0 +1,13 @@
+.spinnerDiv {
+    text-align: center;
+}
+.orderDiv {
+    margin: 50px;
+    align-content: center;
+    background-color: lightsteelblue;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.toCenter {
+    text-align: center;
+}

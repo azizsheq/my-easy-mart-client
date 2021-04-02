@@ -34,7 +34,6 @@ const Home = () => {
                 <input className="homeSearch" type="text" placeholder="Search . . ."></input>
                 <button className="searchButton"><FontAwesomeIcon icon={faSearch} />&nbsp;Search</button>
             </div>
-            <h1>HOME</h1>
             <div id="loadingSpinner" className="spinnerDiv">
                 <Spinner animation="border" variant="success" />
             </div>

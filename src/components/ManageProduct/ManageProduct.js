@@ -32,7 +32,7 @@ const ManageProduct = () => {
 
     return (
         <div>
-            <h1>Manage Product</h1>
+            <h1>Your Products</h1>
             <Table striped bordered hover size="sm">
                 <thead>
                     <tr>

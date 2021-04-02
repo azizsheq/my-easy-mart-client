@@ -28,7 +28,7 @@ const Navigation = () => {
 
                 <li className="navUser">
                     {
-                        !loggedInUser.email ? <FontAwesomeIcon icon={faUser} /> : loggedInUser.email
+                        !loggedInUser.email ? <FontAwesomeIcon icon={faUser} /> : loggedInUser.name
                     }
                 </li>
             </ul>

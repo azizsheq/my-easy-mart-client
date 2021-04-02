@@ -11,10 +11,10 @@ const Orders = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5055/getOrderedProduct')
+        fetch('http://localhost:5055/getOrderedProduct?email='+loggedInUser.email)
             .then(res => res.json())
             .then(data => {
-                // console.log(data);
+                console.log(data);
                 setProducts(data)
             })
         displaySpinner(false);  // to stop the spinner

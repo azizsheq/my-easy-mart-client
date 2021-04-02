@@ -1,6 +1,6 @@
 import React from 'react';
-import './NoMatch.css'
-import sad from '../../images/sad emoji.png'
+import './NoMatch.css';
+import sad from '../../images/sad emoji.png';
 
 const NoMatch = () => {
     return (

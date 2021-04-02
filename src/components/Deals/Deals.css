@@ -1,0 +1,11 @@
+.dealsDiv {
+    text-align: center;
+    padding-top: 100px;
+}
+.dealsDiv h1 {
+    color: #4CAF50;
+}
+.dealsDiv img {
+    height: 150px;
+    width: 150px;
+}

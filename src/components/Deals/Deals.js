@@ -1,13 +1,15 @@
 import React from 'react';
-import { Button, Spinner } from 'react-bootstrap';
+import './Deals.css';
+import sad from '../../images/sad emoji.png';
 
 const Deals = () => {
     return (
-        <div>
-            <h1>DEALS</h1>
-            <h2>Spinner</h2>
-            <Button>Button</Button>
-            <Spinner animation="border" variant="success" />
+        <div className="dealsDiv">
+            <h2>We are Sorry</h2>
+            <img src={sad} alt="mem logo" />
+            <h1>No Deals are Available !</h1>
+            <h2>Please Visit Later</h2>
+            <a href="/home">Back to Home</a>
         </div>
     );
 };

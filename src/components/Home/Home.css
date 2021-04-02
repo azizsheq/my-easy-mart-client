@@ -33,3 +33,34 @@
     text-align: center;
     justify-content: center;
 }
+@media only screen and (max-width: 600px) {
+    .searchDiv {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .homeSearch {
+        width: 40%;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        font-size: 12px;
+        background-color: white;
+        padding: 10px 16px 10px 20px;
+    }
+    .searchButton {
+        background-color: #4CAF50;
+        color: white;
+        width: 13%;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        font-size: 12px;
+        padding: 10px;
+        font-weight: 300;
+    }
+    .homeMainDiv{
+        display: grid;
+        grid-template-columns: auto;
+        background-color: whitesmoke;
+    }
+  }

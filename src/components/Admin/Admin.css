@@ -45,3 +45,21 @@
     height: 500px;
     background-color:#F4FCFB;
 }
+
+@media only screen and (max-width: 600px) {
+    .adminLeft h1 {
+        padding-left: 20px;
+    }
+    .adminUL h1{
+        padding-left: 10px;
+    }
+    .adminA{
+        padding-left: 10px;
+    }
+    .adminRight {
+        float: left;
+        width: 70%;
+        height: 500px;
+        background-color:#F4FCFB;
+    }
+  }

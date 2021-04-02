@@ -79,33 +79,33 @@ const Checkout = () => {
             <div className="container checkoutDiv">
                 <Container>
                     <Row>
-                        <Col md={6}>Description</Col>
-                        <Col md={2} className="colQty">Quantity</Col>
-                        <Col md={4} className="toRight">Price</Col>
+                        <Col sm md={6}>Description</Col>
+                        <Col sm md={2} className="colQty">Quantity</Col>
+                        <Col sm md={4} className="toRight">Price</Col>
                     </Row>
                     <hr />
                     <Row>
-                        <Col md={6}><b>{product.description}</b></Col>
-                        <Col md={2} className="colQty"><b>1</b></Col>
-                        <Col md={4} className="toRight"><b>$ {product.price}</b></Col>
+                        <Col sm md={6}><b>{product.description}</b></Col>
+                        <Col sm md={2} className="colQty"><b>1</b></Col>
+                        <Col sm md={4} className="toRight"><b>$ {product.price}</b></Col>
                     </Row>
                     <hr />
                     <Row>
-                        <Col md={6}><b>Total</b></Col>
-                        <Col md={2} className="colQty"></Col>
-                        <Col md={4} className="toRight"><b>$ {product.price}</b></Col>
+                        <Col sm md={6}><b>Total</b></Col>
+                        <Col sm md={2} className="colQty"></Col>
+                        <Col sm md={4} className="toRight"><b>$ {product.price}</b></Col>
                     </Row>
                 </Container>
             </div>
 
             <Container>
                 <Row>
-                    <Col md={4}>
+                    <Col sm md={4}>
                         <Link to='/home'>
                             <Button className="btn btn-warning">Back to Home</Button>
                         </Link>
                     </Col>
-                    <Col md={{ span: 4, offset: 4 }} className="toRight">
+                    <Col sm md={{ span: 4, offset: 4 }} className="toRight">
                         <Link to="/home">
                         <Button className="btn btn-success" onClick={handleCheckout}>Checkout</Button>
                         </Link>

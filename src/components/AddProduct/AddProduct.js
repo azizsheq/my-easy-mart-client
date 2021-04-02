@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileUpload } from "@fortawesome/free-solid-svg-icons";
-import { Button, Col, Form, Row } from 'react-bootstrap';
+import { Button, Col, Form, Row, Spinner } from 'react-bootstrap';
 import './AddProduct.css';
 
 const AddProduct = () => {
@@ -27,7 +27,7 @@ const AddProduct = () => {
 
     // form validation
     const findFormErrors = () => {
-        const { name, description, price} = formData
+        const { name, description, price } = formData
         const newErrors = {}
 
         // name errors
@@ -53,7 +53,7 @@ const AddProduct = () => {
             // We got errors!
             setErrors(newErrors)
         } else {
-            console.log(formData);
+            // console.log(formData);
             // const url = `http://localhost:5055/addProduct`;
             const url = `https://secure-atoll-57993.herokuapp.com/addProduct`;
 
@@ -66,7 +66,7 @@ const AddProduct = () => {
                 body: JSON.stringify(formData),
             })
                 .then(response => {
-                    console.log("Server side response: ", response);
+                    // console.log("Server side response: ", response);
                 })
                 .catch(error => {
                     console.error('Server side Error:', error);
@@ -107,7 +107,7 @@ const AddProduct = () => {
         <div className="addProductForm">
             <div className="container">
                 <Form onSubmit={handelSubmit}>
-                    
+
                     <Form.Group as={Row} controlId="formHorizontalName">
                         <Form.Label column sm={4}>
                             Product Name
@@ -129,7 +129,7 @@ const AddProduct = () => {
                         </Form.Label>
                         <Col sm={8}>
                             <Form.Control type="text" placeholder="Enter Description"
-                                onChange={e => setField('description', e.target.value)} 
+                                onChange={e => setField('description', e.target.value)}
                                 isInvalid={!!errors.description}
                             />
                             <Form.Control.Feedback type='invalid'>
@@ -158,7 +158,7 @@ const AddProduct = () => {
                             Add Photo <FontAwesomeIcon icon={faFileUpload} />
                         </Form.Label>
                         <Col sm={8}>
-                            <Form.Control type="file" onChange={handleImageUpload}/>
+                            <Form.Control type="file" onChange={handleImageUpload} />
                         </Col>
                     </Form.Group>
 

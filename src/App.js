@@ -4,15 +4,16 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Admin from "./components/Admin/Admin";
-import Checkout from "./components/Checkout/Checkout";
-import Deals from "./components/Deals/Deals";
-import Home from "./components/Home/Home";
-import Login from "./components/Login/Login";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Navigation from "./components/Navigation/Navigation";
+import Checkout from "./components/Checkout/Checkout";
 import NoMatch from "./components/NoMatch/NoMatch";
 import Orders from "./components/Orders/Orders";
-import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import Login from "./components/Login/Login";
+import Deals from "./components/Deals/Deals";
+import Admin from "./components/Admin/Admin";
+import Home from "./components/Home/Home";
+import Footer from "./components/Footer/Footer";
 
 export const UserContext = createContext();
 
@@ -50,6 +51,7 @@ function App() {
             <NoMatch />
           </Route>
         </Switch>
+        <Footer/>
       </Router>
     </UserContext.Provider>
   );

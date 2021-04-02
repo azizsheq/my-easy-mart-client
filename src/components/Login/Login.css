@@ -25,3 +25,30 @@
     color: white;
     font-size: 18px;
 }
+@media only screen and (max-width: 600px) {
+    .loginMainDiv {
+        margin-top: 10px;
+        height: 250px;
+        width: 50%;
+        padding-top: 10px;
+    }
+    .googleButton{
+        background-color: #4CAF50;
+        width: 50%;
+        height: 40px;
+        border: 1px  solid white;
+        border-radius: 8px;
+        color: white;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .signOutButton{
+        background-color: #4CAF50;
+        width: 50%;
+        height: 40px;
+        border: 1px  solid white;
+        border-radius: 8px;
+        color: white;
+        font-size: 12px;
+    }
+}

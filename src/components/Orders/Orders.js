@@ -15,7 +15,7 @@ const Orders = () => {
         fetch('https://secure-atoll-57993.herokuapp.com/getOrderedProduct?email='+loggedInUser.email)
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                // console.log(data);
                 setProducts(data)
             })
         displaySpinner(false);  // to stop the spinner
@@ -31,11 +31,7 @@ const Orders = () => {
             spinner.style.display = "none"; // to hide 
         }
     }
-
-    const deleteOrder = () => {
-
-    }
-
+    
     return (
         <div className="container">
             <h1>Welcome back, {loggedInUser.name}</h1>
@@ -60,8 +56,7 @@ const Orders = () => {
                                     <td>{product.productName}</td>
                                     <td>{product.orderDate}</td>
                                     <td className="toCenter">{product.productPrice}</td>
-                                    <td className="toCenter"><FontAwesomeIcon icon={faInfoCircle} style={{ color: 'gray' }}
-                                        onClick={() => deleteOrder(product._id)} /></td>
+                                    <td className="toCenter"><FontAwesomeIcon icon={faInfoCircle} style={{ color: 'gray' }}/></td>
                                 </tr>
                             </tbody>
                         )

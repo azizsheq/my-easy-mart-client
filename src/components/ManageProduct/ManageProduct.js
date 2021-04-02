@@ -19,7 +19,7 @@ const ManageProduct = () => {
     const deleteProduct = (id) => {
         // const url = `http://localhost:5055/deleteProduct/${id}`;
         const url = `https://secure-atoll-57993.herokuapp.com/deleteProduct/${id}`;
-        console.log(url);
+        // console.log(url);
 
         // fetch for sending new product data to server 
         fetch(url, {
@@ -27,14 +27,14 @@ const ManageProduct = () => {
         })
             .then(res => res.json())
             .then(res => {
-                console.log(res);
+                // console.log(res);
             })
         alert('Product Deleted Successfully !')
     }
 
     return (
         <div>
-            <h1>Your Products</h1>
+            <h4>Your Products</h4>
             <Table striped bordered hover size="sm">
                 <thead>
                     <tr>

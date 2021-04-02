@@ -41,3 +41,12 @@ ul {
     height: 40px;
     width: 40px;
 }
+@media only screen and (max-width: 600px) {
+  li a {
+    padding: 10px 12px;
+  }
+  .navUser {
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+}

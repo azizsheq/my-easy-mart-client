@@ -23,7 +23,8 @@ const Checkout = () => {
 
     // fetch for getting same product from server 
     useEffect(() => {
-        const url = `http://localhost:5055/getClickedProduct/${id}`;
+        // const url = `http://localhost:5055/getClickedProduct/${id}`;
+        const url = `https://secure-atoll-57993.herokuapp.com/getClickedProduct/${id}`;
         // console.log('url: ', url);
         fetch(url)
             .then(res => res.json())
@@ -52,7 +53,8 @@ const Checkout = () => {
         // setting new order object
         // console.log(checkoutProduct);
         // fetch for sending checkout product data to server 
-        const orderURL = `http://localhost:5055/addToOrders`;
+        // const orderURL = `http://localhost:5055/addToOrders`;
+        const orderURL = `https://secure-atoll-57993.herokuapp.com/addToOrders`;
         fetch(orderURL, {
             method: 'POST',
             headers: {

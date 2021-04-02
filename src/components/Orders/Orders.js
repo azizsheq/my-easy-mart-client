@@ -11,7 +11,8 @@ const Orders = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5055/getOrderedProduct?email='+loggedInUser.email)
+        // fetch('http://localhost:5055/getOrderedProduct?email='+loggedInUser.email)
+        fetch('https://secure-atoll-57993.herokuapp.com/getOrderedProduct?email='+loggedInUser.email)
             .then(res => res.json())
             .then(data => {
                 console.log(data);

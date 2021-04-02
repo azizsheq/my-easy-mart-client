@@ -54,7 +54,8 @@ const AddProduct = () => {
             setErrors(newErrors)
         } else {
             console.log(formData);
-            const url = `http://localhost:5055/addProduct`;
+            // const url = `http://localhost:5055/addProduct`;
+            const url = `https://secure-atoll-57993.herokuapp.com/addProduct`;
 
             // fetch for sending new product data to server 
             fetch(url, {

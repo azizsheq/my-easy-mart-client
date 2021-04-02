@@ -7,7 +7,8 @@ import { Table } from 'react-bootstrap';
 const ManageProduct = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5055/getProducts')
+        // fetch('http://localhost:5055/getProducts')
+        fetch('https://secure-atoll-57993.herokuapp.com/getProducts')
             .then(res => res.json())
             .then(data => {
                 // console.log(data);
@@ -16,7 +17,8 @@ const ManageProduct = () => {
     }, [])
 
     const deleteProduct = (id) => {
-        const url = `http://localhost:5055/deleteProduct/${id}`;
+        // const url = `http://localhost:5055/deleteProduct/${id}`;
+        const url = `https://secure-atoll-57993.herokuapp.com/deleteProduct/${id}`;
         console.log(url);
 
         // fetch for sending new product data to server 

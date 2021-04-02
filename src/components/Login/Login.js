@@ -86,7 +86,7 @@ const Login = () => {
 
     return (
         <div className="loginMainDiv">
-            <h1>LOGIN</h1>
+            <h1 style={{color:'white'}}>LOGIN</h1>
             {
                 loggedInUser.email ? 
                 <button onClick={handleSignOut} className="signOutButton">Sign out</button> : 

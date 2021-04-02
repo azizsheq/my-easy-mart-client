@@ -8,7 +8,8 @@ import { Spinner } from 'react-bootstrap';
 const Home = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5055/getProducts')
+        // fetch('http://localhost:5055/getProducts')
+        fetch('https://secure-atoll-57993.herokuapp.com/getProducts')
             .then(res => res.json())
             .then(data => {
                 // console.log(data);
